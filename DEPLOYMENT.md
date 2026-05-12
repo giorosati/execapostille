@@ -2,15 +2,9 @@
 
 ## Quick Start (5 minutes)
 
-### Step 1: Create GitHub Repository
-1. Go to [GitHub](https://github.com/new)
-2. Create a new repository:
-   - Name: `execapostille.github.io` (or any name)
-   - Make it Public
-   - Do NOT initialize with README (we have one)
-3. Click "Create repository"
+This repository is now configured for GitHub Actions deployment to GitHub Pages.
 
-### Step 2: Push Code to GitHub
+### Step 1: Push code to GitHub
 In your terminal/PowerShell:
 
 ```powershell
