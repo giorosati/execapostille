@@ -177,7 +177,7 @@ body {
 
 .flags-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 15px;
     padding: 2rem;
     background: var(--light-bg);
@@ -188,10 +188,9 @@ body {
 
 .flag-item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    justify-content: flex-start;
+    gap: 1rem;
     padding: 1rem;
     background: white;
     border-radius: 8px;
@@ -199,6 +198,15 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
     min-height: 90px;
+}
+
+.flag-name {
+    flex: 1;
+    font-size: 0.9rem;
+    text-align: left;
+    color: #666;
+    font-weight: 500;
+    word-break: break-word;
 }
 
 .flag-item:hover {
@@ -334,6 +342,18 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .flags-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .flags-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -353,7 +373,7 @@ body {
     }
 
     .flags-grid {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
         max-height: 500px;
     }
@@ -396,7 +416,7 @@ body {
     }
 
     .flags-grid {
-        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+        grid-template-columns: 1fr;
     }
 }
 
