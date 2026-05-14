@@ -24,7 +24,7 @@ jobs:
       - name: Prepare site for deployment
         run: |
           mkdir -p output
-          cp -R index.html styles.css script.js CNAME assets output/
+          cp -R index.html styles.css script.js CNAME assets favicon.png favicon.ico .nojekyll output/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
